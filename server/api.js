@@ -30,7 +30,7 @@ export default function api(app) {
           })
           .on('done',(error) => {
             if (error) {
-              res.status(500).send(error);
+              res.status(400).send("Error in processing the file");
             }
             res.send(resJson);
           });
